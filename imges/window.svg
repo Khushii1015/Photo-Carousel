@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b4e72"/>
+      <stop offset=".6" stop-color="#8f7fa3"/>
+      <stop offset="1" stop-color="#e3a98a"/>
+    </linearGradient>
+    <linearGradient id="room" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4a5670"/>
+      <stop offset="1" stop-color="#5d6984"/>
+    </linearGradient>
+  </defs>
+
+  <!-- dim room -->
+  <rect width="800" height="600" fill="url(#room)"/>
+  <rect y="500" width="800" height="100" fill="#3a3f52"/>
+
+  <!-- large window -->
+  <rect x="180" y="60" width="440" height="340" fill="#2f354a"/>
+  <rect x="198" y="78" width="404" height="304" fill="url(#dusk)"/>
+  <!-- distant rooftops -->
+  <path d="M198 382 L198 320 L240 320 L240 300 L290 300 L290 330 L340 330 L340 290 L380 270 L420 290 L420 335 L470 335 L470 310 L530 310 L530 330 L602 330 L602 382 Z" fill="#2b3a55" opacity=".85"/>
+  <rect x="255" y="312" width="8" height="10" fill="#e0a458" opacity=".9"/>
+  <rect x="490" y="320" width="8" height="10" fill="#e0a458" opacity=".9"/>
+  <!-- rain -->
+  <g stroke="#dfe6f2" stroke-width="2" stroke-linecap="round" opacity=".55">
+    <line x1="230" y1="100" x2="222" y2="128"/><line x1="290" y1="150" x2="282" y2="178"/>
+    <line x1="350" y1="95" x2="342" y2="123"/><line x1="420" y1="170" x2="412" y2="198"/>
+    <line x1="480" y1="110" x2="472" y2="138"/><line x1="550" y1="160" x2="542" y2="188"/>
+    <line x1="580" y1="95" x2="572" y2="123"/><line x1="260" y1="230" x2="252" y2="258"/>
+    <line x1="390" y1="240" x2="382" y2="268"/><line x1="520" y1="235" x2="512" y2="263"/>
+  </g>
+  <!-- window cross bars -->
+  <rect x="394" y="78" width="12" height="304" fill="#2f354a"/>
+  <rect x="198" y="222" width="404" height="12" fill="#2f354a"/>
+
+  <!-- window seat -->
+  <rect x="160" y="400" width="480" height="26" fill="#2b2f3f"/>
+  <rect x="170" y="426" width="460" height="74" fill="#353a4d"/>
+  <rect x="190" y="388" width="240" height="16" rx="8" fill="#8aa399"/>
+
+  <!-- seated figure, silhouetted against the window -->
+  <path d="M250 392 Q238 300 290 285 L330 285 Q360 292 362 330 L362 392 Z" fill="#c8553d"/>
+  <path d="M330 392 Q350 330 395 340 Q420 348 418 392 Z" fill="#a9432f"/>
+  <circle cx="306" cy="250" r="32" fill="#cf9a76"/>
+  <path d="M274 252 Q268 212 306 214 Q342 216 338 248 Q326 230 304 232 Q284 234 274 252 Z" fill="#3a2a22"/>
+  <path d="M276 250 Q270 290 286 300 L296 260 Z" fill="#3a2a22"/>
+  <!-- arm holding a mug -->
+  <path d="M340 320 Q370 330 378 316" stroke="#c8553d" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <rect x="372" y="298" width="26" height="30" rx="4" fill="#efe3d1"/>
+  <path d="M398 306 Q410 312 398 320" stroke="#efe3d1" stroke-width="4" fill="none"/>
+  <path d="M380 290 Q374 278 382 268 M390 290 Q396 276 388 264" stroke="#efe3d1" stroke-width="2.5" fill="none" opacity=".6" stroke-linecap="round"/>
+
+  <!-- plant on the sill -->
+  <path d="M520 400 L560 400 L554 368 L526 368 Z" fill="#e0a458"/>
+  <path d="M540 368 C528 340 515 335 505 322 M540 368 C546 335 556 325 572 316 M540 368 C540 345 542 330 538 312" stroke="#6f8f72" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+  <!-- curtain -->
+  <path d="M150 50 L210 50 Q190 220 214 420 L150 420 Z" fill="#7a4e33" opacity=".9"/>
+  <path d="M650 50 L590 50 Q612 220 586 420 L650 420 Z" fill="#7a4e33" opacity=".9"/>
+  <rect x="130" y="40" width="540" height="12" rx="6" fill="#2b2f3f"/>
+</svg>
