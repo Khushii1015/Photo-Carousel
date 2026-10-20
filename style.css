@@ -6,14 +6,14 @@
   --line: #e1d5c4;
 }
 
-body.theme-goodbye {
-  --accent: #2b3a55;      /* cool blue: distance, absence */
-  --accent-soft: #dbe2ee;
+body.theme-reunion {
+  --accent: #c8553d;      /* warm terracotta: an old friendship, warmth */
+  --accent-soft: #f6dcd2;
 }
 
-body.theme-homecoming {
-  --accent: #c8553d;      /* warm terracotta: arrival, warmth */
-  --accent-soft: #f6dcd2;
+body.theme-strangers {
+  --accent: #5b4b8a;      /* arcade purple: playful, a new start */
+  --accent-soft: #e4dff2;
 }
 
 * { box-sizing: border-box; }
@@ -109,14 +109,14 @@ h1 {
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 18px 40px rgba(36, 31, 28, 0.18);
-  background: #000;
+  background: #2a2522;   /* fills the space around portrait photos */
 }
 
 #stage-image {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
+  object-fit: contain;   /* shows the whole photo, portrait or landscape */
   cursor: pointer;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -254,6 +254,7 @@ h1 {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: center 30%;   /* keeps faces in view on thumbnails */
   border-radius: 8px;
   border: 3px solid transparent;
 }
