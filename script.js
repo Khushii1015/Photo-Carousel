@@ -8,54 +8,54 @@
    The three images. Each one appears in BOTH sequences —
    only the order (and the caption) changes. */
 const images = {
-  embrace: {
-    src: "images/embrace.svg",
-    alt: "Two people hugging in an open doorway at night"
+  selfie: {
+    src: "images/selfie.jpg",
+    alt: "My friend and me taking a selfie together"
   },
-  suitcase: {
-    src: "images/suitcase.svg",
-    alt: "A packed suitcase standing next to the front door"
+  arcade: {
+    src: "images/arcade.jpg",
+    alt: "My friend and me playing arcade games"
   },
-  window: {
-    src: "images/window.svg",
-    alt: "A person sitting alone at a rainy window holding a mug"
+  hug: {
+    src: "images/hug.jpg",
+    alt: "My friend and me hugging"
   }
 };
 
-/* The two sequences. Same images, reversed order, new meaning. */
+/* The two sequences. Same images, different order, new meaning. */
 const sequences = {
-  goodbye: {
-    title: "The Goodbye",
+  reunion: {
+    title: "The Reunion",
     steps: [
       {
-        image: "embrace",
-        caption: "One last hug at the door. Neither of them wants to be the first to let go."
+        image: "selfie",
+        caption: "After way too long apart, we were finally together again. First order of business: a selfie."
       },
       {
-        image: "suitcase",
-        caption: "The suitcase is packed and waiting. Outside, the taxi’s engine is already running."
+        image: "arcade",
+        caption: "We spent the afternoon at the arcade, trash-talking and competing like no time had passed."
       },
       {
-        image: "window",
-        caption: "The rain starts after the car pulls away. The house has never felt this quiet."
+        image: "hug",
+        caption: "One last hug before we went our separate ways. Let’s not wait so long next time."
       }
     ]
   },
 
-  homecoming: {
-    title: "The Homecoming",
+  strangers: {
+    title: "Strangers to Friends",
     steps: [
       {
-        image: "window",
-        caption: "Another evening at the window, counting down the days until they come back."
+        image: "arcade",
+        caption: "Two strangers at side-by-side machines, both chasing the same high score. Neither of us would back down."
       },
       {
-        image: "suitcase",
-        caption: "A suitcase in the hallway. The door clicks shut behind it. They’re home."
+        image: "hug",
+        caption: "Somewhere around round ten, the rivalry turned into laughing. We called it a tie and hugged it out."
       },
       {
-        image: "embrace",
-        caption: "The hug they’ve been waiting months for. This time, nobody has to let go."
+        image: "selfie",
+        caption: "Our very first photo together. The day a rival became a friend."
       }
     ]
   }
@@ -65,7 +65,7 @@ const actLabels = ["Beginning", "Middle", "End"];
 
 
 /* ---------- 2. STATE (variables that change as the user interacts) ---------- */
-let currentSequence = "goodbye";   // which story is showing
+let currentSequence = "reunion";   // which story is showing
 let currentStep = 0;               // 0 = beginning, 1 = middle, 2 = end
 let autoplayTimer = null;          // holds the setInterval id while playing
 
